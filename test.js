@@ -11,9 +11,12 @@ app.get('/',(req,res)=>{
    
 })
 */
-app.listen(3000,()=>{
-    console.log('ecoute sur 3000...')
-})
+const PORT = process.env.PORT || 8081;
+
+// Listen on port 8081
+app.listen(PORT, () =>
+  console.log(Application is listening on port ${PORT}!)
+);
 //set index.html
 app.set('views','./Views');
 app.use(express.static('public'));
