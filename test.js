@@ -18,10 +18,10 @@ app.listen(PORT, () =>
   console.log(`Application is listening on port ${PORT}!`)
 );
 //set index.html
-app.set('views','./Views');
+//app.set('views','./Views');
 app.use(express.static('public'));
 
-app.use(express.static(__dirname + '/Views'));
+//app.use(express.static(__dirname + '/Views'));
 // set css file :
 app.use('/css',express.static(__dirname + '/public'));
 //set image file :
