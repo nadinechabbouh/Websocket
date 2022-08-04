@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>index</title>
+        <head>
+            <link rel="stylesheet" href="C:\Users\PC\Documents\nadine\stage\websocket\index.css">
+            <script src="index.js"></script>
+        </head>
+    </head>
+    <body>
+        <div id="messages"></div>
+        <form action="">
+           <input id="msg" autocomplete="off"/>
+           <button >send</button>
+        </form>
+       <!-- <script>
+            const ws= new WebSocket("ws://localhost:8082");
+            ws.addEventListener("open",()=>{
+                console.log("we are connected!")
+                ws.send("hello")
+            })
+        </script>-->
+        <script src="/socket.io/socket.io.js"> </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script> 
+           $(function (){
+             var socket=io();
+             $("form").submit(function(e){
+               e.preventDefault();
+               socket.emit("message de chat", $("#msg").val());
+               $("#msg").val("");
+               return false;
+        })
+    
+            socket.on("message de chat",function(msg){
+                 $("#messages").append($("<p>").text(msg))
+        })
+    })
+           </script>
+           <!--convertir de js a json-->
+           <script> 
+                
+                var id ={ name:"nadine",age:22,sexe:"femme",hobby:["voyage","musique","sport"]};
+                var tojson=JSON.stringify(id);
+                localStorage.setItem("idjson",tojson);
+
+           </script>
+           <!--convertir de json a js-->
+           <script>
+            var fromjson = localStorage.getItem(output);
+            var obj = JSON.parse(fromjson);
+            </script>
+       
+
+             <!--manipuler des objets-->
+             <script>
+
+
+                /*
+                var a={
+
+                request:{
+                    "header":{
+
+                         "endpoint":`/NAR/v1/transaction`,
+
+                                "flow_id":"577125"}
+                                ,resource:{ 
+                                    clerk_id:id.value,
+                                    txn_type:"sale", 
+                                    amount:{transaction_amount:{"value":value.value, "decimal_shift":dec.value, "currency":cur.value},
+                                                           tip:{"value":valtip.value, "decimal_shift":dectip.value, "currency":curtip.value}},
+                                enable_suspend_events:false}}};*/
+                    var r=(document.getElementById("request")).value
+                    var h=(document.getElementById("header")).value
+                    var e=(document.getElementById("endpoint")).value
+                    var fi=(document.getElementById("flow_id")).value
+                    var rs=(document.getElementById("resource")).value
+                    var ci=(document.getElementById("clerk_id")).value
+                    var tx=(document.getElementById("txn_type")).value
+                    var am=(document.getElementById("amount")).value
+                    var tram=(document.getElementById("transaction_amount")).value
+                    var val=(document.getElementById("value")).value
+                    var dec=(document.getElementById("decimal_shift")).value
+                    var cur=(document.getElementById("currency")).value
+                    var t=(document.getElementById("tip")).value
+                    var valt=(document.getElementById("valuetip")).value
+                    var dect=(document.getElementById("decimal_shifttip")).value
+                    var curt=(document.getElementById("currencytip")).value
+                    var x=(document.getElementById("enable_suspend_events")).value                        
+                    
+                    
+           
+           
+            var messtram={
+                val:value.value,
+                dec:decsh.value,
+                cur:curr.value
+                }
+            messtram[(document.getElementById("value")).value]=messtram["val"]
+            messtram[(document.getElementById("decimal_shift")).value]=messtram["dec"] 
+            messtram[(document.getElementById("currency")).value]=messtram["cur"]    
+    
+
+            var messt={
+                valt: valtip.value ,
+                dect :dectip.value ,
+                curt : curtip.value
+            }
+            messt[(document.getElementById("valuetip")).value]=messt["valt"]
+            messt[(document.getElementById("decimal_shifttip")).value]=messt["dect"]
+            messt[(document.getElementById("currencytip")).value]=messt["curt"]
+
+            var messam={
+                ...messtram,
+                ...messt
+            }
+            messam[(document.getElementById("amount")).value]=messam["tram"]
+            messam[(document.getElementById("tip")).value]=messam["t"]
+
+            var messrs={
+                ci:id.value,
+                tx:"force_sale",
+                ...messam,
+                x:false
+            }
+            messrs[(document.getElementById("clerk_id")).value]=messrs["ci"]
+            messrs[(document.getElementById("txn_type")).value]=messrs["tx"]
+            messrs[(document.getElementById("amount")).value]=messrs["am"]
+            messrs[(document.getElementById("enable_suspend_events")).value]=messrs["x"]
+            var messh={
+                e:`/NAR/v1/transaction`,
+                fi:"577125"
+            }
+            messh[(document.getElementById("endpoint")).value]=messh["e"]
+            messh[(document.getElementById("flow_id")).value]=messh["fi"] 
+           var messr={
+               ...messh,
+               ...messrs 
+            }
+            messr[(document.getElementById("request")).value]=messr["h"]
+            messr[(document.getElementById("header")).value]=messr["rs"] 
+            mess={
+                ...messr
+            } 
+             
+             
+             
+             
+             
+             </script>
+    </body>
+</html>   

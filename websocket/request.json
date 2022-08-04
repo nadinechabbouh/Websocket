@@ -1,0 +1,19 @@
+{
+   "request": {
+      "header": {
+         "endpoint": "/NAR/v1/transaction",
+         "flow_id": "577125"
+      },
+      "resource": {
+         "txn_type": "sale",
+         "amount": {
+            "transaction_amount": {
+               "value": 1000,
+               "decimal_shift": 2,
+               "currency": 840
+            }
+         },
+         "print_receipt": true
+      }
+   }
+}

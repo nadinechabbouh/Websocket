@@ -1,0 +1,1500 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell|Raleway&display=swap');
+
+
+:root {
+    --black: #333;
+    --blue: #7c8be3;
+    --green: #b9c127;
+    --bleu: rgb(20, 4, 108);
+    --red: rgba(206, 133, 133, 0.8);
+    --white: #FFF;
+
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Raleway, Verdana, san-serif;
+    font-style: italic;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.accessibility{
+    position: absolute;
+    left: -15000px;
+}
+#mainHeader{
+    display: grid;
+    grid-template-columns: 80px 1fr 40px;
+    align-items: start;
+    background-color: var(--bleu);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+legend {
+    padding: 0 10px;
+    color: rgb(240, 243, 247);
+    font-size: 20pt;
+    font-weight: bold;
+}
+#mainHeader h1{
+    margin: 0 0 0 20px;
+    color: var(--white);
+    font-family: Cantarell, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+fieldset {
+    margin-bottom: 10px;
+    
+    border: 5px solid rgb(0, 0, 0);
+    min-width: 0;
+    width: 900px;
+    
+}
+#pageContent {
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-image: url(../image/image1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+#pageContent.home{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+
+#pageContent.home #pictInfo p{
+    margin: 20px 0;
+    font-size: .8em;
+    
+}
+
+#pageContent.web #leftCol{
+    display: grid;
+    text-align: center;
+    background-color: rgba(153, 171, 197, 0.8);
+    padding: 50px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#pageContent.web #leftCol article{
+    padding: 10px;
+    color: var(--black)
+    
+}
+
+
+#pageContent.web #leftCol article header p{
+    font-size: .8em;
+    font-style: italic;
+}
+
+
+
+    
+    #pageContent.web #leftCol article p img{
+        max-width: 50%;
+        float: left;
+        margin: 0 10px 10px 0;
+    }
+@media screen and (min-width: 1024px){  
+    #pageContent.web{
+        grid-template-columns: 2fr 1fr;
+     }
+     #pageContent.web#leftCol article p img{
+         max-width: 100%;
+        
+        
+     }
+ }
+@media screen and (min-width: 1280px){
+    #pageContent.web #leftCol article p img{
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1600px){
+    #pageContent.web{
+        grid-template-columns: 3fr 1fr;
+     }
+     #pageContent.web #leftCol article p img{
+        max-width: 100%;
+    }
+}
+
+
+ #a{
+    text-align: center;
+    margin: 30px;
+    
+    margin: 20px ;
+    color:#000000;
+    
+    transform:translate(-20px,-10px);
+    font-size: 1.5em;
+    height: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+#pp{
+    transform:translate(-20px,-110px);
+}
+#showhist button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(1px,10px);
+
+}
+#showhist button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+#sale button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(40px,10px);
+
+}
+#sale button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+
+#void button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(40px,0px);
+}
+#void button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+#auth button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(40px,0px);
+}
+#auth button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+#con button{
+    cursor: pointer;
+
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(250px,10px);
+}
+#con button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+  
+  
+
+#dis button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(320px,-36px);
+
+}
+#dis button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+#showhistory button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    
+ 
+} 
+#showhistory button:hover {
+    background-color: rgb(54, 71, 157);
+  } 
+#cl button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    
+
+}
+#cl button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+#Sale #inputvalueS{
+    display: inline-block;
+    align-items:flex-start;
+
+}
+
+#inp{
+    transform:translate(-250px,60px);
+    font-size: 20px;
+    float: right;
+}
+#inputurl{
+    font-weight: bold;
+    height: 30px;
+    width: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+   
+}  
+/*******************SETTING**************************/
+
+#changSale{
+    display: grid;
+    font-size: 20px;
+    
+}
+#changSale input{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    
+}
+
+input#valuetip{
+    transform:translate(180px,-175px);
+}
+input#decimal_shifttip{
+    transform:translate(350px,-210px);
+}
+
+input#currencytip{
+    transform:translate(530px,-245px);
+}
+input#print_receipt{
+    transform:translate(0px,-210px);
+}
+input#host_approval_code{
+    transform:translate(0px,-210px);
+
+}
+input#token{
+    transform:translate(0px,-210px);
+
+}
+input#valuetoken{
+    transform:translate(180px,-245px);
+
+}
+input#exp_date{
+    transform:translate(350px,-280px);
+
+}
+input#valuetipdev{
+    transform:translate(180px,-175px);
+}
+input#decimal_shifttipdev{
+    transform:translate(350px,-210px);
+}
+
+input#currencytipdev{
+    transform:translate(530px,-245px);
+}
+
+input#value{
+    transform:translate(180px,-100px);
+}
+input#decimal_shift{
+    transform:translate(350px,-135px);
+}
+
+input#currency{
+    transform:translate(530px,-170px);
+}
+input#valuedev{
+    transform:translate(180px,-100px);
+}
+input#decimal_shiftdev{
+    transform:translate(350px,-135px);
+}
+
+input#currencydev{
+    transform:translate(530px,-170px);
+}
+
+
+
+#changSale button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(240px,-100px);
+    width: 100px;
+}
+#changSale button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+ 
+
+    /*******************SALE**************************/
+ #ps{
+    transform:translate(-400px,5px);
+  font-size: 4em;
+}  
+#inputvalueS {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 3px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+   
+    
+    
+}  
+#inputcurS{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+   
+    
+}
+#inputId{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+   
+}
+#inputinvoice{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+
+
+#inputdec{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;}
+
+    
+
+    #inputESES{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }
+   
+    #inputPRS{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }  
+    
+
+    /******************TIP***************************/
+
+#inputvalueST {
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 3px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(20px,5px);
+       
+        
+        
+    }  
+#inputcurST{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(15px,5px);
+       
+        
+    }    
+#inputdecT{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;}
+
+        #inputvalueFST {
+            font-weight: bold;
+            height: 30px;
+            width: 150px;
+            margin-bottom: 3px;
+            text-align: center;
+            border-radius: 15px 15px;
+            transform:translate(20px,5px);
+           
+            
+            
+        }  
+    #inputcurFST{
+            font-weight: bold;
+            height: 30px;
+            width: 150px;
+            margin-bottom: 5px;
+            text-align: center;
+            border-radius: 15px 15px;
+            transform:translate(15px,5px);
+           
+            
+        }    
+    #inputdecFT{
+            font-weight: bold;
+            height: 30px;
+            width: 150px;
+            margin-bottom: 5px;
+            text-align: center;
+            border-radius: 15px 15px;}
+
+     
+          
+ .tab3 button{
+    cursor: pointer;
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 25px 15px;
+    transform:translate(40px,10px);
+    width: 100px;
+ }  
+
+.tab3 button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+
+/********************FORCE SALE*************************/
+
+
+
+#inputvalueFS {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 3px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);}
+
+#inputcurFS {
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 3px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(15px,5px); }
+#inputdecFS{
+            font-weight: bold;
+            height: 30px;
+            width: 150px;
+            margin-bottom: 5px;
+            text-align: center;
+            border-radius: 15px 15px;}
+                    
+#inputIdFS {
+     font-weight: bold;
+     height: 30px;
+     width: 150px;
+     margin-bottom: 3px;
+     text-align: center;                              
+     border-radius: 15px 15px;
+     transform:translate(20px,5px) }  
+     
+#inputinvoiceFS{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+    }            
+    #inputESEFS{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }
+   
+    #inputPRFS{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }  
+    
+
+    
+
+
+ 
+    /********************REFUND*************************/   
+    
+    #inputvalueR {
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 3px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(20px,5px);
+       
+        
+        
+    }  
+    #inputcurR{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(15px,5px);
+        
+    }
+    #inputdecR{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;}
+        
+    #inputIdR{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(20px,5px)
+       
+    }
+    
+    
+    #inputinvoiceR{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+    }           
+
+    #inputESER{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }
+   
+    #inputPRR{
+        font-weight: bold;
+        height: 30px;
+        width: 150px;
+        margin-bottom: 5px;
+        text-align: center;
+        border-radius: 15px 15px;
+        transform:translate(1px,5px);
+    }  
+    
+    /**********************VOID***********************/
+#inputrefV{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+    
+}
+
+    
+#inputinvoiceV{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+
+#inputESEV{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+
+#inputPRV{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+   
+    /*********************AUTH************************/
+  
+#inputvalueA {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+}  
+#inputcurA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);;
+}  
+#inputdecA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;}
+    
+#inputrefA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+} 
+#inputIdA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px)
+   
+}
+
+
+#inputinvoiceA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+}       
+#inputESEA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+
+#inputPRA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+  
+
+    /**********************PRE AUTH COMPLETION***********************/
+
+#inputvalueAC {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+} 
+#inputdecAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}   
+#inputcurAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+}  
+#inputrefAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+} 
+
+#inputinvoiceAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+#inputESEAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+
+#inputPRAC{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+  
+/********************TA*************************/  
+#inputrefTA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+    
+}
+#inputvalueTA {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+} 
+#inputdecTA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}   
+#inputcurTA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+}  
+#inputESETA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+
+#ESE{
+    transform:translate(-35px,5px); 
+}
+#inputPRTA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+
+/******************transaction_adjust**********************/
+
+#inputrefTrA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+    
+}
+#inputvalueTrA {
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(20px,5px);
+} 
+#inputdecTrA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}   
+#inputcurTrA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(15px,5px);
+}  
+#inputESETrA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+#inputPRTrA{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+
+#ESEtr{
+    transform:translate(-35px,5px); 
+}
+#inputvalueTrAT{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+}
+#inputdecTrAT{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+}
+#inputcurTrAT{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+}
+#hhh{
+    transform:translate(-15px,5px); 
+
+}
+
+
+ /*******************Settlement***************************/
+ #inputESESet{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}
+#ESESet{
+    transform:translate(-35px,5px); 
+}
+#inputPRSet{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+/*******************Balance inq***************************/
+#inputypeBI{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    
+}  
+#inputPRBI{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+#inputPRBI1{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    transform:translate(1px,5px);
+}  
+#hh{
+    transform:translate(-65px,5px);
+}
+#inputtokenvalBI{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+   
+}  
+#inputtokendateBI{
+    font-weight: bold;
+    height: 30px;
+    width: 150px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 15px 15px;
+    
+}  
+    /*********************************************/
+
+#inputip{
+    border-radius: 15px 15px;
+    transform:translate(10px,0px);
+    font-size: 20px;
+}
+#responseFromServer{
+    height: 200px;
+    width: 500px;
+}
+#changereq{
+    height: 200px;
+    width: 500px;
+    transform:translate(40px,-100px);
+
+}
+#changereqFS{
+    height: 200px;
+    width: 500px;
+    transform:translate(40px,-150px);
+}
+
+#pageContent section{
+    margin-right: 1em;
+    text-align: center;
+}
+select{text-align: center;}
+#status{
+    transform:translate(40px,5px);
+    color:#000000;
+}
+#connectionStatus{
+    transform:translate(40px,5px);
+
+}
+span{
+    display: block;
+    text-align: center;
+}
+.main-box.no-header {
+    padding-top: 20px;
+}
+.table {
+    transform:translate(-20px,5px);
+    margin-bottom: 16px;
+    -moz-border-radius: 3px;
+    border-radius: 15px 15px;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 850px;
+}
+.table thead tr th {
+    background-color: rgb(103, 125, 212);
+    border-bottom: 2px solid #0f0e0e;
+    vertical-align: middle;
+    border: 3px solid #000000;
+    padding: 20px ;
+    border-radius: 15px 15px;
+   
+}
+
+.table tbody tr td {
+    background-color: #fafafa;
+    font-size: 0.875em;
+   table-layout: fixed;
+   width: 500px;
+    border-top: 1px solid #010000;
+    padding: 50px 5px ;
+    border: 3px solid #000000;
+    border-radius: 15px 15px;
+    height: 200px;
+}
+div.m{
+    text-align:unset;
+    font-size: 15px;
+    overflow-x: scroll;
+}
+
+
+
+  
+  .items p{
+    padding: 3px 10px;
+    
+    color: #000000;
+    font-weight: bold;
+    font-size:100px;
+    font-style: italic;
+   
+  }
+  
+  
+ 
+  
+  
+  .items-body-content:hover {
+    border-radius: 15px;
+    border: 1px solid bisque;
+    
+  };
+  
+
+  #historyContainer{
+    margin: auto; 
+    text-align: left;
+    word-wrap: break-word;
+    word-break: break-all;
+   
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    text-align: center;
+    border: solid;
+    
+    width: 550px;
+    
+    
+  }
+
+  
+  
+  .tab button {
+    background-color: inherit;
+    float:left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 40px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 25px 15px;
+    position: relative;
+    margin-left: 30px;
+    
+    
+    
+    
+  }
+  
+  
+  .tab button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+  
+  
+  .tab button.active {
+    background-color:  rgb(54, 71, 157);
+  }
+  
+  
+  .tabcontent {
+    display:none;
+    padding: 50px 50px;
+    border: 3px solid rgb(11, 11, 11);
+    border-top: none;
+    border-radius: 3px ;
+    
+ }
+   
+ .tab2 {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    text-align: center;
+    border: solid;
+    width: 100px;
+    margin: auto;
+    transform:translate(50px,5px);
+    
+  }  
+   
+  .tab2 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px ;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 25px 15px;
+    position: relative;
+    margin-left: 380px;
+    margin: auto;
+   
+    
+    
+  }    
+    
+  .tab2 button:hover {
+    background-color: rgb(54, 71, 157);
+  }
+  
+  
+  .tab2 button.active {
+    background-color: rgb(61, 69, 137);
+  }
+    
+  
+.dropdown {
+
+float: left;
+overflow: hidden;
+
+
+}
+
+.dropdown .dropbtn {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: rgb(5, 0, 0);
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+
+}
+.dropdown-content {
+display: none;
+
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border-radius: 25px 15px;
+}
+
+
+.dropdown-content button {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+    text-align: left;
+    display:grid;
+}
+
+.dropdown-content a:hover {
+background-color: #ddd;
+} 
+
+
+
+.dropdown2 {
+float:none;
+overflow:hidden;
+
+}
+
+.dropdown2 .dropbtn2 {
+cursor: pointer;
+font-size: 16px;  
+border: none;
+outline: none;
+color: rgb(5, 0, 0);
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit;
+margin: 0;
+
+}
+.dropdown-content2 {
+display: none;
+
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+border-radius: 25px 15px;
+}
+
+
+.dropdown-content2 button {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+
+text-align: left;
+display:grid;
+}
+
+.dropdown-content2 a:hover {
+background-color: rgb(247, 245, 245);
+} 
+
+.dropdown1 {
+    float: left;
+    overflow:hidden;
+    
+    }
+    
+    .dropdown1 .dropbtn1 {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(5, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    
+    }
+    .dropdown-content1 {
+    display: none;
+    
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 25px 15px;
+    }
+    
+    
+    .dropdown-content1 button {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    display:grid;
+    }
+    
+    .dropdown-content1 a:hover {
+    background-color: rgb(247, 245, 245);
+    } 
+
+    .show {
+        display: block;
+        } 
+
+  
+
+
+        
